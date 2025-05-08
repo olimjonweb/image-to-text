@@ -1,2 +1,4 @@
 # image-to-text
-Tugallanmagan loyiha
+Tasvirdan matn ko'chiruvchi dastur.
+Xozircha faqat frontend qismi!.
+Backend qismi alohida faylda ishladi!.

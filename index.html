@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="active">Asosiy</a>
+            <a href="pricing.html">Premium xizmatlar</a>
+            <a href="contact.html">Bog'lanish</a>
+        </div>
+    </nav>
+
+    <div class="hero-section page-transition" id="home-hero">
+        <h1>Rasmlardan matnni ajratish xizmati</h1>
+        <p class="hero-description">Zamonaviy texnologiyalar yordamida istalgan formatdagi rasmlardagi matnlarni tez va sifatli ajratib oling. Bizning xizmatimiz orqali hujjatlar, kitoblar, va boshqa manbalardagi matnlarni bir zumda raqamli formatga o'tkazing.</p>
+        <div class="hero-buttons">
+            <a href="#home-container" class="hero-btn primary">Hozir boshlash</a>
+            <a href="pricing.html" class="hero-btn secondary">Premium xizmatlar</a>
+        </div>
+    </div>
+
+    <div class="container page-transition" id="home-container">
+        <div class="main-content">
+            <div class="glass-container">
+                <h2>Suratdan matnni ajratib oling</h2>
+                <div class="upload-area">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                        <i class="fas fa-cloud-upload-alt"></i> Suratni tanlang
+                    </button>
+                </div>
+                <div class="status-container">
+                    <div class="drop-zone" id="dropZone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Suratni shu yerga tashlang yoki <span>bosing</span></p>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                    </div>
+                    <div class="status-message" id="statusMessage"></div>
+                    <div class="result-container" id="resultContainer"></div>
+                </div>
+                <button class="convert-btn" id="convertBtn" disabled>
+                    <i class="fas fa-magic"></i>Matnni ajratib olish 
+                </button>
+            </div>
+        </div>
+
+        <div class="side-content">
+            <h3>Xizmat haqida</h3>
+            <p>Bizning xizmatimiz orqali siz:</p>
+            <ul class="features-list">
+                <li>Har qanday formatdagi rasmlardan matnlarni ajratib olishingiz</li>
+                <li>Word, PDF va boshqa formatlarga eksport qilishingiz</li>
+                <li>O'zbek, rus, ingliz va boshqa tillardagi matnlarni tanishingiz</li>
+                <li>Yuqori aniqlikda natijalar olishingiz mumkin</li>
+            </ul>
+            
+            <h3>Qo'shimcha imkoniyatlar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            
+            <h3>Foydalanish qulayliklari</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, nisl nunc tincidunt nunc, vitae aliquam nunc nunc vitae nunc.</p>
+            
+            <div class="info-box">
+                <h4>Muhim eslatma</h4>
+                <p>Rasmlaringiz maxfiy va xavfsiz saqlanadi. Barcha ma'lumotlar shifrlangan holda uzatiladi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section page-transition" id="home-features">
+        <div class="container">
+            <h2>Nima uchun bizni tanlash kerak?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Tez ishlash</h3>
+                    <p>Zamonaviy serverlarimiz orqali sekundlar ichida natijalar oling</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Xavfsizlik</h3>
+                    <p>Barcha ma'lumotlar shifrlangan holda uzatiladi va saqlanadi</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-language"></i>
+                    <h3>Ko'p tilli</h3>
+                    <p>O'zbek, rus, ingliz va boshqa tillardagi matnlarni tanishingiz</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Eksport</h3>
+                    <p>Natijalarni Word, PDF va boshqa formatlarga eksport qiling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Image to Text</h3>
+                <p>Suratdan matnni tez va aniq ajratib olish</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tezkor havolalar</h3>
+                <div class="footer-links">
+                    <a href="index.html">Bosh sahifa</a>
+                    <a href="pricing.html">Premium xizmatlar</a>
+                    <a href="contact.html">Bog'lanish</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Bog'lanish</h3>
+                <div class="social-icons">
+                    <a href="mailto:info@imagetotext.uz"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+998901234567"><i class="fas fa-phone"></i></a>
+                    <a href="https://t.me/imagetotext"><i class="fab fa-telegram"></i></a>
+                    <a href="https://instagram.com/imagetotext"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Image to Text. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

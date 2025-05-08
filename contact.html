@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bog'lanish - Image to Text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Asosiy</a>
+            <a href="pricing.html">Premium xizmatlar</a>
+            <a href="contact.html" class="active">Bog'lanish</a>
+        </div>
+    </nav>
+
+    <div class="hero-section page-transition" id="contact-hero">
+        <h1>Biz bilan bog'laning</h1>
+        <p class="hero-description">Savollaringiz bormi? Biz sizga yordam berishdan xursand bo'lamiz. Quyidagi ma'lumotlar orqali biz bilan bog'lanishingiz mumkin.</p>
+    </div>
+
+    <div class="contact-section page-transition" id="contact-container">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@imagetotext.uz</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefon</h3>
+                        <p>+998 90 123 45 67</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Ish vaqti</h3>
+                        <p>Dushanba - Juma: 9:00 - 18:00</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Manzil</h3>
+                        <p>Toshkent sh., Yunusobod t., Amir Temur ko'chasi, 15-uy</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Xabar yuborish</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ismingiz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email manzilingiz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefon raqamingiz" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Mavzuni tanlang</option>
+                                <option value="support">Texnik yordam</option>
+                                <option value="business">Hamkorlik</option>
+                                <option value="other">Boshqa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Xabaringiz" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Xabar yuborish
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section page-transition" id="contact-faq">
+        <div class="container">
+            <h2>Ko'p so'raladigan savollar</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Qaysi vaqtda xabar yuborish mumkin?</h3>
+                    <p>Biz 24/7 xizmat ko'rsatamiz. Xabaringizni istalgan vaqtda yuborishingiz mumkin, lekin rasmiy javob ish vaqtida beriladi.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Xabar yuborish uchun qancha vaqt kerak?</h3>
+                    <p>Odatda, biz xabaringizga 24 soat ichida javob beramiz. Zudlik bilan yordam kerak bo'lsa, telefon orqali bog'lanishni tavsiya qilamiz.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Qaysi tillarda murojaat qilish mumkin?</h3>
+                    <p>Biz o'zbek, rus va ingliz tillarida xizmat ko'rsatamiz. Xabaringizni istalgan tilda yuborishingiz mumkin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Image to Text</h3>
+                <p>Suratdan matnni tez va aniq ajratib olish</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tezkor havolalar</h3>
+                <div class="footer-links">
+                    <a href="index.html">Bosh sahifa</a>
+                    <a href="pricing.html">Premium xizmatlar</a>
+                    <a href="contact.html">Bog'lanish</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Bog'lanish</h3>
+                <div class="social-icons">
+                    <a href="mailto:info@imagetotext.uz"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+998901234567"><i class="fas fa-phone"></i></a>
+                    <a href="https://t.me/imagetotext"><i class="fab fa-telegram"></i></a>
+                    <a href="https://instagram.com/imagetotext"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Image to Text. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
